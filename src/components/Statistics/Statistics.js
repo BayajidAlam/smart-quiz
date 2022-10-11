@@ -1,29 +1,22 @@
-import React,{ PureComponent } from "react";
+import React from "react";
 import { useLoaderData } from "react-router-dom";
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { ToolTips } from "rechart";
+import { BarChart } from "recharts";
+import { Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
   const datas = useLoaderData();
-  console.log(datas.data);
+  const total = (datas.data)
+  
   return (
-    <div>
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart width={150} height={40} data={datas.data}>
-          <Bar dataKey="uv" fill="#ffffff" />
+    <div className="mx-auto">
+      <h1>Chart</h1>
+      <BarChart className="mx-auto mt-20" width={1000} height={700} data={datas.data}>
+          <Bar dataKey="total" fill="#8884d8" />
           <XAxis></XAxis>
           <YAxis></YAxis>
+          <ToolTips></ToolTips>
         </BarChart>
-      </ResponsiveContainer>
     </div>
   );
 };
