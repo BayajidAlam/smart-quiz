@@ -5,7 +5,6 @@ import Topic from '../Topic/Topic';
 
 const Home = () => {
   const datas = useLoaderData()
-  console.log(datas);
   return (
     <div>
       <div>
