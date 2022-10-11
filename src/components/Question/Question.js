@@ -5,8 +5,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Question = ({singleQuestion}) => {
   const {question,options,id,correctAnswer} = singleQuestion;
-  console.log(correctAnswer);
-  
+  console.log(singleQuestion)
   return (
     <div className='bg-slate-300 my-4 p-4 rounded shadow-xl'>
 

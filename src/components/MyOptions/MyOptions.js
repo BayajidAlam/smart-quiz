@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MyOptions = ({options}) => {
-  console.log(options);
+  
   return (
     <div className='bg-slate-200 p-8 text-2xl rounded'>
      <form className='items-center justify-start'>
