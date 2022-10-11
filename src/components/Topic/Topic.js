@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Topic = ({data}) => {
-
-  const { name, logo, total } = data;
+  console.log(data)
+  const { name, logo, total, id } = data;
   
   return (
     <div className="card card-compact w-86 mx-auto bg-slate-100 shadow-xl">
@@ -13,7 +14,7 @@ const Topic = ({data}) => {
         <p>Total quiz: {total}</p>
         </div>
       <div className="card-actions justify-end">
-        <button className="btn btn-primary">Start exam</button>
+        <button className="btn btn-primary"><Link to={`/topics/${id}`}>Start exam</Link></button>
       </div>
     </div>
   </div>
