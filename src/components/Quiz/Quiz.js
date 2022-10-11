@@ -8,8 +8,8 @@ const Quiz = () => {
   console.log(data.data)
   return (
     <div>
-      <p>{name}</p>
-      <div>
+      <p className='text-2xl container mx-auto'>{name}</p>
+      <div className='container mx-auto'>
         {
           questions.map(singleQuestion => <Question 
             key={questions.id}

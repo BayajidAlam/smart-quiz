@@ -1,11 +1,13 @@
 import React from 'react';
 
 const MyOptions = ({options}) => {
+  console.log(options);
   return (
     <div>
-      <ul>
-        <input type="text" />
-      </ul>
+     <form>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">{options}</label>
+     </form>
     </div>
   );
 };
