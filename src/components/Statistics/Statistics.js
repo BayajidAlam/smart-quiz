@@ -9,14 +9,17 @@ const Statistics = () => {
   const total = (datas.data)
   
   return (
-    <div className="mx-auto">
-      <h1>Chart</h1>
-      <BarChart className="mx-auto mt-20" width={1000} height={700} data={datas.data}>
+    <div className="mx-auto container mt-40">
+    <div style={{ width: '100%', height: 500}}>
+    <ResponsiveContainer>
+      <BarChart className="mx-auto mt-20" width={500} height={400} data={datas.data}>
           <Bar dataKey="total" fill="#8884d8" />
           <XAxis></XAxis>
           <YAxis></YAxis>
-          <ToolTips></ToolTips>
+          <Tooltip></Tooltip>
         </BarChart>
+      </ResponsiveContainer>
+    </div>
     </div>
   );
 };

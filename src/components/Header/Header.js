@@ -44,7 +44,7 @@ const Header = () => {
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               <div className="relative p-3">
-                <p>Statistics </p>
+                <p>Insights</p>
                 
               </div>
             </Link>
@@ -152,7 +152,7 @@ const Header = () => {
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         <div className="relative">
-                          <p>Statistics </p>
+                          <p>Insights</p>
                         
                         </div>
                       </Link>
