@@ -8,8 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Question = ( { singleQuestion } ) => {
+
   const { question, options, correctAnswer } = singleQuestion;
-  // console.log(singleQuestion);
+
+ 
   const validateSelection = (target) => {
     if(target === correctAnswer){
       toast.success('Right selected!' , {autoClose: 300,  position: toast.POSITION.TOP_CENTER})
@@ -18,12 +20,17 @@ const Question = ( { singleQuestion } ) => {
       toast.warning('you selected wrong!', {autoClose: 300, position: toast.POSITION.TOP_CENTER})
     }
   }
+
+  const showAnswer = (correctAnswer) => {
+      toast.info(correctAnswer, {autoClose: 300, position: toast.POSITION.TOP_CENTER})
+  }
+
   return (
     <div className='bg-slate-300 my-4 p-4 rounded shadow-xl'>
 
       <div className='flex justify-around items-center'>
       <p className='text-xl my-4'>{question}</p>
-      <FontAwesomeIcon className='items-end' icon={faEye}></FontAwesomeIcon>
+      <FontAwesomeIcon onClick={()=>showAnswer(correctAnswer)} className='items-end' icon={faEye}></FontAwesomeIcon>
       </div>
 
     <div className='grid grid grid-cols-2 gap-6'>
