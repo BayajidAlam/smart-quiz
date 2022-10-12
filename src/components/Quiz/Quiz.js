@@ -3,9 +3,10 @@ import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
 const Quiz = () => {
+
   const data = useLoaderData()
-  const {name,questions,id} = data.data
-  // console.log(data.data)
+  const { name, questions } = data.data
+  
   return (
     <div>
       <p className='text-3xl container mx-auto'>{name}</p>

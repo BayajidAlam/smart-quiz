@@ -4,7 +4,9 @@ import Banner from '../Banner/Banner';
 import Topic from '../Topic/Topic';
 
 const Home = () => {
+  
   const datas = useLoaderData()
+
   return (
     <div>
       <div className='my-4'>

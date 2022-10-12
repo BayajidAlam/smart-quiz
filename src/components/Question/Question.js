@@ -11,7 +11,6 @@ const Question = ( { singleQuestion } ) => {
 
   const { question, options, correctAnswer } = singleQuestion;
 
- 
   const validateSelection = (target) => {
     if(target === correctAnswer){
       toast.success('Right selected!' , {autoClose: 300,  position: toast.POSITION.TOP_CENTER})
