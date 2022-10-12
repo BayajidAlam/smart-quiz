@@ -1,5 +1,5 @@
 ### Name
-- This project name is smart quiz
+- This project name is **Smaty Quiz**
 
 ### live link
 [smart quiz](https://smart-quiz-37c28e.netlify.app/)
