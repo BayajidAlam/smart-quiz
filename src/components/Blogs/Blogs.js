@@ -4,7 +4,7 @@ const Blogs = () => {
   return (
     <div className="container mx-auto px-6">
       <div className="blog my-10">
-        <p className="text-xl font-bold">
+        <p className="text-xl font-bold text-blue-300">
           What is the purpose of react router?
         </p>
         <p className="text-slate-400 mt-3">
@@ -21,7 +21,7 @@ const Blogs = () => {
         </p>
       </div>
       <div className="blog my-10">
-        <p className="text-xl font-bold">How does context api works?</p>
+        <p className="text-xl font-bold text-blue-300">How does context api works?</p>
         <p className="text-slate-400 mt-3">
           React.createContext() is all you need. It returns a consumer and a
           provider. Provider is a component that as it's names suggests provides
@@ -31,7 +31,7 @@ const Blogs = () => {
         </p>
       </div>
       <div className="blog my-10">
-        <p className="text-xl font-bold">What is useref?</p>
+        <p className="text-xl font-bold text-blue-300">What is useref?</p>
         <p className="text-slate-400 mt-3">
           useRef returns a mutable ref object whose .current property is
           initialized to the passed argument (initialValue). The returned object

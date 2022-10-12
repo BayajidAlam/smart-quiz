@@ -1,5 +1,5 @@
 import React from "react";
-
+import img from './img.png'
 const Banner = () => {
   return (
     <div className="container mx-auto flex">
@@ -10,8 +10,8 @@ const Banner = () => {
           <p className="text-3xl">Smart Quiz!</p>
         </div>
       </div>
-      <div className="right-side w-1/2 h-40">
-        <img className="bg-slate-100" src="./img.png" alt="myBanner" />
+      <div className="right-side w-1/2 h-40 bg-slate-300">
+       <img className="w-full h-40" src={img} alt="imgs" />
       </div>
     </div>
   );

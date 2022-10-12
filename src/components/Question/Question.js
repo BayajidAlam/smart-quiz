@@ -22,7 +22,7 @@ const Question = ( { singleQuestion } ) => {
   }
 
   const showAnswer = (correctAnswer) => {
-      toast.info(correctAnswer, {autoClose: 300, position: toast.POSITION.TOP_CENTER})
+      toast.info(correctAnswer, {autoClose: 1000, position: toast.POSITION.TOP_CENTER})
   }
 
   return (

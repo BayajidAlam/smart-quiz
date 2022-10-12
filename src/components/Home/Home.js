@@ -7,9 +7,8 @@ const Home = () => {
   const datas = useLoaderData()
   return (
     <div>
-      <div>
+      <div className='my-4'>
         <Banner></Banner>
-       <h4>Home</h4>
       </div>
     <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 container gap-6 justify-around container mx-auto'>
     {
