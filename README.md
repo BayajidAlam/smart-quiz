@@ -2,7 +2,7 @@
 - This project name is smart quiz
 
 ### live link
-[smart quiz]:(https://smart-quiz-37c28e.netlify.app/)
+[smart quiz](https://smart-quiz-37c28e.netlify.app/)
 
 ### Explanation about building this project
 - This was my second project with react
@@ -14,6 +14,6 @@
 
 ### My git hub repo link
 
-[Github]:(https://github.com/programming-hero-web-course2/b6-quiz-crackerz-BayajidAlam)
+[Github](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-BayajidAlam)
 
 
