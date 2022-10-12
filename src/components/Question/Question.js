@@ -2,6 +2,8 @@ import React from 'react';
 import MyOptions from '../MyOptions/MyOptions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -10,10 +12,10 @@ const Question = ( { singleQuestion } ) => {
   // console.log(singleQuestion);
   const validateSelection = (target) => {
     if(target === correctAnswer){
-      console.log('okkk')
+      toast.success('Right selected!' , {autoClose: 300,  position: toast.POSITION.TOP_CENTER})
     }
     else{
-      console.log('not okk');
+      toast.warning('you selected wrong!', {autoClose: 300, position: toast.POSITION.TOP_CENTER})
     }
   }
   return (
@@ -32,6 +34,7 @@ const Question = ( { singleQuestion } ) => {
         validateSelection={validateSelection}
           ></MyOptions>)
       }
+      <ToastContainer></ToastContainer>
     </div>
     </div>
   );
